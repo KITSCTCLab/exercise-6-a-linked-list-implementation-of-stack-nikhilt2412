@@ -18,18 +18,17 @@ class Stack:
       temp = self.head
       self.head = temp.next
   def status(self):
-    """
-    It prints all the elements of stack.
-    """
-    temp = self.head
-
-    while temp.next!= None:
-      print(temp.data, end = "")
-      print("=>", end = "")
-      temp = temp.next
-     
-    print(temp.data, end = "=>")
-    print("None")
+    if(self.head  == None):
+      print("Stack Empty")
+      
+    else:
+      temp = self.head
+      while temp.next!= None:
+        print(temp.data, end = "")
+        print("=>", end = "")
+        temp = temp.next
+      print(temp.data, end = "=>")
+      print("None")
 
 # Do not change the following code
 stack = Stack()
