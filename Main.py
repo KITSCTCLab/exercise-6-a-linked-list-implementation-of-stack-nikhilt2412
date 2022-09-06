@@ -22,13 +22,13 @@ class Stack:
     It prints all the elements of stack.
     """
     temp = self.head
-    p = temp
-    while p.next!= None:
+
+    while temp.next!= None:
       print(temp.data, end = "")
       print("=>", end = "")
-      p = temp
       temp = temp.next
-      
+     
+    print(temp.data, end = "=>")
     print("None")
 
 # Do not change the following code
