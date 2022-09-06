@@ -25,6 +25,10 @@ class Stack:
     while temp.next!= None:
       print(temp.data)
       temp = temp.next
+      
+    print(temp.data)
+    temp = temp.next
+    print(temp.data)
 
 # Do not change the following code
 stack = Stack()
