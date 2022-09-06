@@ -22,6 +22,7 @@ class Stack:
     It prints all the elements of stack.
     """
     temp = self.head
+    p = None
     while p.next!= None:
       print(temp.data+"=>")
       p = temp
