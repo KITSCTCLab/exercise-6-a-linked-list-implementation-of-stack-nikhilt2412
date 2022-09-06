@@ -24,7 +24,7 @@ class Stack:
     temp = self.head
     p = temp
     while p.next!= None:
-      print((temp.data)+"=>")
+      print((temp.data)end = "=>")
       p = temp
       temp = temp.next
       
