@@ -18,17 +18,15 @@ class Stack:
       temp = self.head
       self.head = temp.next
   def status(self):
-    if(self.head  == None):
-      print("Stack Empty")
-      
-    else:
+    if(self.head  != None):
       temp = self.head
       while temp.next!= None:
         print(temp.data, end = "")
         print("=>", end = "")
         temp = temp.next
       print(temp.data, end = "=>")
-      print("None")
+      
+    print("None")
 
 # Do not change the following code
 stack = Stack()
