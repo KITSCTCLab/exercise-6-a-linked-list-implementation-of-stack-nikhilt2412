@@ -14,9 +14,9 @@ class Stack:
     self.head = nn
 
   def pop(self) -> None:
-    temp = self.head
-    self.head = temp.next
-
+    if(self.head!=None):
+      temp = self.head
+      self.head = temp.next
   def status(self):
     """
     It prints all the elements of stack.
